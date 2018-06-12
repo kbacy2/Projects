@@ -28,6 +28,10 @@ body{
     display: none;
 }
 
+.gifka{
+    display: none;
+}
+
 .text{
     background-color: deeppink;
     text-align: left;
