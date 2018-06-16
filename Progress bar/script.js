@@ -1,6 +1,7 @@
 /**
  * Created by collex on 11.06.2018.
  */
+var elem = document.querySelector('.my_bar');
 var button = document.querySelector('.click');
 var hik = document.querySelector('.hik');
 var progressBar = document.querySelector('.my_progress');
@@ -15,7 +16,6 @@ audio.addEventListener('durationchange', function () {
   });
 
   function move() {
-    var elem = document.querySelector('.my_bar');
     var width = 1;
     var id = setInterval(frame, audio.duration * 1000 / 100); // 1000 = 1s
     function frame () {
