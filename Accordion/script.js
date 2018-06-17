@@ -1,10 +1,14 @@
-var accord = document.querySelectorAll('.accord');
+var accordBox = document.querySelectorAll('.accord-box');
+var panels = document.querySelectorAll('.panel');
 
-accord.forEach(function (acc) {
-    acc.addEventListener('click', function () {
+accordBox.forEach(function (box) {
+    var header = box.querySelector('.accord');
+    var panel = box.querySelector('.panel');
+    header.addEventListener('click', function () {
+        panels.forEach(function (panel) { // Hide all
+            panel.classList.remove('show');
+        });
         this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-
+        panel.classList.toggle("show");
     });
-    
 });
