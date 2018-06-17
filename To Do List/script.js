@@ -6,15 +6,9 @@ myNodelist.forEach(function (elem) {
     span.appendChild(txt);
     elem.appendChild(span);
 
-});
-
-var close = document.querySelectorAll('.close');
-close.forEach(function (elem) {
-    elem.addEventListener('click', function () {
-        var div = this.parentElement;
-        div.style.display = "none";
-
-    });
+    elem.addEventListener('click', function (event) {
+        if (event.target.className === 'close') elem.style.display = "none";
+    })
 
 });
 
@@ -52,17 +46,9 @@ function newElem() {
     span.appendChild(txt);
     li.appendChild(span);
 
-
-    var close = document.querySelectorAll('.close');
-    close.forEach(function (elem) {
-        elem.addEventListener('click', function () {
-            var div = this.parentElement;
-            div.style.display = "none";
-
-        });
-
-    });
-
+      li.addEventListener('click', function (event) {
+        if (event.target.className === 'close') li.style.display = "none";
+      });
 };
 
 addBtn.addEventListener('click', newElem);
