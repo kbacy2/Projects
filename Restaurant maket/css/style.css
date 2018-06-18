@@ -1,0 +1,1695 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body{
+	height: 100%;
+	
+}
+
+body{
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+
+.wrapper_bcg{
+	background-color: rgba(0, 0, 0, 0.7);
+	background-size: 100% 930px;
+	position: relative;
+	z-index: 10;
+	height: 100%;
+}
+
+.wrapper_bcg_delivary{
+	background-color: rgba(0, 0, 0, 0.7);
+	background-size: 100% 886px;
+	position: relative;
+	z-index: 10;
+	height: 100%;
+}
+
+.bcg_leaves{
+    background: url(../img/leave.png) no-repeat;
+    /* background-size: 358px 274px; */
+    /* background-position: top right; */
+    position: absolute;
+    height: 274px;
+    width: 358px;
+    /* margin-left: 75%; */
+    /* margin-top: -9%; */
+    top: 480px;
+    left: 60%;
+}
+    /*ПРАВИЛЬНО СДЕЛАЛ?*/
+}
+
+.main{
+	max-width: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+.container_help{
+	max-width: 1170px;
+	min-height: 100%; /*- НУЖНО ДЛЯ ПРИБИТИЯ ФУТТЕРА*/
+	margin: 0 auto;
+}
+
+.container_help_2{
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 182px;
+}
+
+.block_1{
+	background: url(../img/food-layer.png) no-repeat;
+    background-size: 100% 930px;
+    position: relative;
+    z-index: 100;
+
+}
+
+.block_2{
+	height: 2169px;
+	margin-top: 136px;
+}
+
+.block_2-1{
+/*	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	z-index: 200;*/
+}
+
+.content_slider{
+	margin-bottom: 258px;
+
+}
+
+
+.block_delivary{
+	background: url(../img/food-layer.png) no-repeat;
+    background-size: 100% 930px;
+    position: relative;
+    z-index: 100;
+    height: 886px;
+
+}
+
+
+
+
+
+
+
+a {
+	border: none;
+	text-decoration: none;
+}
+/*--------------------------------------------------*/
+
+/*FONTS*/
+.menu_item a, .reservation_button{
+	font-family: SourceSansPro-Bold;
+	font-size: 14px;
+}
+
+.text_header, .red_text_header, .login, .number
+, .descr_text, .container_about_us_block, .second_li_text{
+	font-family: Poppins-Regular;
+	font-size: 14px;
+
+}
+
+.login a{
+	font-family: Simple-Line-Icons;
+}
+
+.footer_menu, .search input{
+	font-family: SourceSansPro-Bold;
+	font-size: 14px;
+}
+
+.feedback_title, .our_stuff_header, .main_dish_header, .sacramento_text, .content_slider_text_header, .container_about_us_header, .block_delivary_header{
+	font-family: Sacramento-Regular;
+	font-size: 36px;
+}
+
+.sign_chef{
+	font-family: Sacramento-Regular;
+}
+
+.sign_1{
+	font-size: 25px;
+}
+
+.sign_2{
+	font-size: 16px;
+}
+
+.sent_message_title, .open_hours_title, .contact_header, .container_blog_title, .subscribe_header, .feedback_header, .event_block_title, .our_stuff_descr, .main_dish_descr, .content_slider_text_descr, .container_about_us_descr, .block_delivary_descr{
+	font-family: LobsterTwo-Regular;
+	font-size: 36px;
+}
+
+.slider_our_stuff_name, .slider_menu_item{
+	font-family: LobsterTwo-Regular;
+	font-size: 24px;
+}
+
+.slider_our_stuff_grade{
+	font-family: LobsterTwo-Regular;
+	font-size: 18px;
+}
+
+.tag_header, .intro_header, .footer_inst_header, .block_delivary_item_header{
+	font-family: LobsterTwo-Regular;
+	font-size: 28px;
+}
+
+.slider_menu_item_cost_old{
+	font-size: 16px;
+	text-decoration: line-through;
+}
+
+
+.slider_h1{
+	font-family: LobsterTwo-Bold;
+	font-size: 48px;
+}
+
+.book_table_head_text{
+	font-family: LobsterTwo-Bold;
+	font-size: 24px;
+}
+
+.welcome{
+	font-family: LobsterTwo-BoldItalic;
+	font-size: 48px;
+}
+
+.to_our_rest{
+	font-family: LobsterTwo-BoldItalic;
+	font-size: 28px;
+}
+
+.slider_text_box, .container_about_us_list li{
+	font-family: Poppins-Medium;
+	font-size: 16px;
+}
+
+.buy_ticket_button, .event_block_what_time, .event_block_date_text, .about_us_button, .see_menu_button, #submit_book_now, .full_menu_button{
+	font-family: Poppins-SemiBold;
+	font-size: 16px;
+}
+
+.post_item_header-2, .post_item_header, .main_dish_menu_header, .event_block_sponsor_text, .time_date_text{
+	font-family: Poppins-SemiBold;
+	font-size: 18px;
+}
+
+.open_hours_time, .open_hours_day, .dish_nav_item, .red_line_kids{
+	font-family: Poppins-SemiBold;
+	font-size: 20px;
+}
+
+.main_dish_menu_price{
+	font-family: Poppins-SemiBold;
+	font-size: 24px;
+}
+
+.event_block_header{
+	font-family: Poppins-SemiBold;
+	font-size: 26px;
+}
+
+.feedback_comment_rating, .book_table input, .book_table option, .book_table select,
+ .book_table.placeholder{
+	font-family: Poppins-Regular;
+	font-size: 16px;
+}
+
+.submit_contact, .sent_message_form input{
+	font-family: Poppins-Regular;
+	font-size: 18px;
+}
+
+.sent_message_form_box textarea, #contact_message, .footer_search, .tag_item, .intro_text, .post_item_text, .subscribe_text, .feedback_comment_text, .event_block_descr, .block_delivary_item_text, .main_dish_menu_text{
+	font-family: Poppins-Regular;
+	font-size: 14px;
+}
+
+.blog_item_date{
+	font-family: Poppins-Regular;
+	font-size: 24px;
+}
+
+.slider_our_stuff_social_icons{
+	font-family: FontAwesome;
+	font-size: 16px;
+}
+
+.footer_inst_icons{
+	font-family: FontAwesome;
+	font-size: 24px;
+}
+
+.big_quotes{
+	font-family: FontAwesome;
+	font-size: 72px;
+}
+
+.feedback_divider{
+	font-family: FontAwesome;
+	font-size: 36px;
+}
+
+.follow_our_stuff{
+	font-family: LobsterTwo-Regular;
+	font-size: 16px;
+}
+
+.blog_item_footer_name, .blog_item_footer_counter{
+	font-family: Poppins-Regular, FontAwesome;
+	font-size: 14px;
+}
+/*--------------------------------------------------*/
+
+/*COLORS*/
+.footer_menu_item, .footer_menu_item, .tag_item, .tag_header, .intro_header, .footer_inst_header, .sent_message_title, .open_hours_day, .open_hours_title, .contact_header, .post_item_header, .container_blog_title, .feedback_comment_rating, .feedback_header, .event_block_what_time, .event_block_date_text, .event_block_title, .our_stuff_descr, .main_dish_menu_price, .main_dish_menu_header, .dish_nav_item, .main_dish_descr, .menu_item a, .to_our_rest, .content_slider_text_descr, .container_about_us_descr, 
+.container_about_us_list li{
+	color: #222222;
+}
+
+.tag_item{
+	color: #222222;
+	background: #fff;
+}
+
+.footer_search form{
+	color: #808080;
+	background-color: #fff;
+}
+
+#submit_search_here{
+	background-color: #00c5d2;
+}
+
+.userful_link{
+	color: #00c5d2;
+}
+
+.dish_nav_item:hover{
+	color: #ff3a2d;
+	border-color: #ff3a2d; 
+
+	/*ПОЧЕМУ СКАЧЕТ, ВСЕ ВРЕМЯ ЗАБЫВАЮ*/ /*- сделать прозрачным в статичном положении*/
+}
+
+.dish_nav_item{
+	border-bottom: 1px solid transparent;
+	
+}
+
+#submit_contact, .reservation_button, .full_menu_button{
+	color: #fff;
+	background-color: #ff3a2d;
+	border: 0px;
+}
+
+.blog_item_footer_name, .blog_item_footer_counter, .blog_item_date, .subscribe_text, .subscribe_header, .buy_ticket_button, .red_line_kids, .text_header, .login, .number, .login a, .slider_text_box, .about_us_button, .see_menu_button
+,.slider_h1, .book_table_head_text, .block_delivary_descr{
+    color: #fff;
+}
+
+#submit_book_now{
+	color: #fff;
+	background: linear-gradient(to right, #40b1e5 0%,#00fff0 100%);
+}
+
+.feedback_divider, .rank_number, .big_quotes, .feedback_title, .event_block_sponsor_text, .time_date_text, .event_block_header, .our_stuff_header, .red_text_header, .welcome, .content_slider_text_header, .container_about_us_header, .block_delivary_header,
+.block_delivary_item_header, .main_dish_header{
+	color: #ff3a2d;
+}
+
+.search input{
+background-color: #bfbdbb;
+color: rgba(190, 189, 186, 0.72);
+
+}
+
+.sacramento_text, #blue_point, .slider_our_stuff_name, .post_item_header-2{
+	color: #00c5d2;
+}
+
+.intro_text, .footer_inst_icons, .sent_message_form input, .open_hours_time, .post_item_text, .feedback_comment_text, .event_block_descr, .follow_our_stuff, .slider_our_stuff_grade, .main_dish_menu_text, .descr_text, .book_table input, .book_table option,
+ .book_table select, .container_about_us_block, .second_li_text, .block_delivary_item_text{
+	color: #808080;
+}
+
+.sign_chef{
+	color: #1c1c1c;
+}
+
+.book_table{
+	background: #ff3a2d;
+}
+
+.block_delivary_item{
+	background: #fff;
+}
+
+/*--------------------------------------------------*/
+
+
+.header{
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.menu_bar{
+	height: 60px; 
+	background: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 19.2%;
+
+}
+
+.menu_item{
+	display: flex;
+	margin-left: 32px;
+	
+}
+
+/*.menu_item:first-child{
+    
+}*/
+
+.buy_icon{
+	display: flex;
+	margin-left: 30px;
+
+}
+
+.reservation_button{
+	display: flex;
+	margin-left: 30px;
+	width: 120px;
+	padding: 6px 0px;
+	justify-content: center;
+	border-bottom-left-radius: 4px; 
+	border-top-right-radius: 4px;
+}
+
+.login a{
+	margin-right: 14%;
+}
+
+.search_form{
+	display: flex;
+}
+
+.search{
+	width: 19%;
+}
+
+.search input{
+  border: none;
+  border-radius: 6px 0 0 6px;
+  height: 28px;
+
+}
+
+.search button{
+	background: #ff3a2d url(../img/search-icon.png) no-repeat center;
+	background-size: 12px 12px;
+	width: 30px;
+	height: 28px;
+	border: 0px;
+	border-radius: 0 6px 6px 0;
+
+	/*КАК СДЕЛАТЬ КНОПКУ КОТОРАЯ МНЕ НУЖНА?*/ - /*СДЕЛАЛ, СМОТРЕТЬ ЗДЕСЬ РЕШЕНИЕ*/
+}
+
+.number{
+	margin-left: -7.5%;
+
+}
+
+.text_header{
+    margin-left: -9%;
+}
+
+.logo{
+	margin-bottom: -6.2%
+}
+
+
+.slider{
+	height: 790px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.slider_text_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.slider_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 46px;
+    width: 32%;
+}
+
+
+.sacramento_text, .slider_h1{
+	margin-bottom: 18px;
+}
+
+.about_us_button, .see_menu_button{
+	width: 150px;
+	height: 40px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about_us_button{
+	border: 2px solid #ff3a2d;
+	border-radius: 6px;
+}
+
+.see_menu_button{
+	background: #ff3a2d;
+	border-radius: 6px;
+}
+
+.star{
+	background: url(../img/star-booktable.png) no-repeat;
+	width: 23px;
+	height: 23px;
+}
+
+.descr_text_box{
+	width: 57.3%;
+	display: flex;
+	flex-direction: column;
+}
+
+.to_our_rest{
+	margin-bottom: 10px;
+}
+
+.descr_text{
+	margin-bottom: 100px;
+}
+
+.book_table_wrapper{
+	width: 35.8%;
+	position: relative;
+	
+}
+
+.book_table{
+	display: flex;
+	padding-bottom: 42px;
+    flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+
+.book_table_head{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 54px;
+	margin-top: 80px;
+	align-items: center;
+}
+
+.book_table_head_text{
+	margin-left: 10px;
+	margin-right: 10px;
+
+	/*ЗВЕЗДЫ СЛЕВА-СПРАВА НЕ ПО СЕРЕДИНЕ*/ /*- РЕШЕНИЕ: ЭЛАЙН-ИТЕМС ЦЕНТР;*/
+}
+
+.form-container{
+	display: flex;
+	flex-direction: column;
+	width: 89.2%;
+	border: 0px solid;
+}
+
+.book_table input, .book_table select{
+	border: 0px;
+	height: 37px;
+	margin-bottom: 22px;
+}
+
+/*КАК ПРАВИЛЬНО СДЕЛАТЬ ОТСТУП В ФОРМАХ? КАК ИХ СТИЛИЗОВАТЬ
+ПО МАКЕТУ? КАКИЕ ФОРМЫ ИСПОЛЬЗОВАТЬ?*/ /*- js, padding*/
+
+.sign_chef{
+	width: 29.9%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.sign_2{
+	display: flex;
+
+}
+
+.red_line{
+	background: url(../img/welcome-line.png) no-repeat;
+	width: 209px;
+	height: 22px;
+	margin-bottom: 52px;
+}
+
+
+input{
+	padding-left: 10px;
+}
+
+/*LINES--------------------*/
+
+.content_slider_text_line{
+	background-image: url(../img/f-item-line.png);
+	width: 270px;
+	height: 28px;
+	margin: auto;
+}
+
+.container_about_us_line{
+	background-image: url(../img/about-us-line.png);
+	width: 209px;
+	height: 22px;
+	margin-bottom: 54px;
+}
+
+.block_delivary_line{
+	background: url(../img/f-item-line.png);
+	width: 270px;
+	height: 28px;
+	margin-bottom: 160px;
+}
+
+.main_dish_line{
+	background: url(../img/main-dish-our-stuff-line.png);
+	width: 270px;
+	height: 28px;
+	margin-bottom: 82px;
+}
+
+.our_stuff_line{
+	background: url(../img/main-dish-our-stuff-line.png);
+	width: 270px;
+	height: 28px;
+	margin-bottom: 76px;
+}
+
+.event_block_line{
+	background: url(../img/main-dish-our-stuff-line.png);
+	width: 270px;
+	height: 28px;
+	margin-bottom: 50px;
+}
+
+.feedback_line{
+	background: url(../img/main-dish-our-stuff-line.png);
+	width: 270px;
+	height: 28px;
+	margin-bottom: 98px;
+}
+
+
+.subscribe_line{
+	background: url(../img/news-white-line.png);
+	width: 209px;
+	height: 22px;
+	margin-bottom: 50px;
+}
+
+.blog_line{
+	background: url(../img/main-dish-our-stuff-line.png);
+	width: 270px;
+	height: 28px;
+	margin-bottom: 100px;
+}
+
+.contact_header_line{
+	background: url(../img/main-dish-our-stuff-line.png);
+	width: 270px;
+	height: 28px;
+	margin-bottom: 80px;
+}
+
+.open_hours_line{
+	background-image: url(../img/about-us-line.png);
+	width: 209px;
+	height: 22px;
+	margin-bottom: 50px;
+
+}
+/*-------------------------------------*/
+
+.content_slider_text{
+	text-align: center;
+	margin-bottom: 90px;
+}
+
+.slider_menu{
+	display: flex;
+}
+
+.slider_menu_item{
+	text-align: center;
+	margin-right: 20px;
+}
+
+.slider_menu_item_cost{
+
+}
+
+.slider_menu_item_cost_old{
+	display: inline;
+	margin-left: 6px;
+}
+
+.slider_menu_wrapper{
+	width: 100%;
+	overflow: hidden;
+	padding: 0 30px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.slider_menu_arrow{
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	top: 90px;
+	
+	
+}
+
+.slider_menu_arrow.left{
+	background: url(../img/food-item-left.png) no-repeat center;
+	left: 0;
+}
+
+.slider_menu_arrow.right{
+	background: url(../img/food-item-right.png) no-repeat center;
+	right: 0;
+}
+
+
+.container_about_us{
+	position: relative;
+}
+
+.chief_woman_img{
+	position: absolute;
+	background: url(../img/woman.png) no-repeat;
+	width: 595px;
+	height: 730px;
+	left: 68%;
+    bottom: -120px;
+}
+
+.container_about_us_text{
+	width: 68.4%;
+
+}
+
+
+.container_about_us_block{
+	margin-bottom: 50px;
+}
+
+
+.container_about_us_list{
+	margin-left: 3%;
+}
+
+
+.second_li_text{
+	margin-left: 10px;
+}
+
+.container_about_us_list li{
+	margin-bottom: 16px;
+}
+
+.block_delivary_text{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 198px;
+}
+
+.block_delivary_header{
+	margin-bottom: 10px;
+}
+
+.block_delivary_choose{
+	display: flex;
+	align-items: stretch; /*- ДЛЯ РАВНОМЕРНОГО РАСТЯЖЕНИЯ БЛОКОВ*/
+}
+
+.block_delivary_item{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 31.6%;
+    /* height: 250px; */
+    margin-right: 30px;
+    padding-bottom: 60px;
+}
+
+.block_delivary_item_icon{
+	width: 100px;
+	height: 80px;
+	padding: 6px 12px;
+	box-sizing: border-box;
+	margin-top: -38px;
+	background-color: #fff;
+	border-radius: 0px 24px 0 24px;
+	box-shadow: 0px 0px 12px 0px #000000;
+}
+
+.block_delivary_item_header{
+	margin-top: 35px;
+
+}
+
+.block_delivary_item_text{
+	padding: 0px 10px;
+    margin-top: 12px;
+}
+
+.block_delivary_item:last-child{
+	margin-right: 0px;
+}
+
+/*ПРАВИЛЬНО ЛИ СДЕЛАЛ ЭТОТ БЛОК? ПЭДДИНГИ, МАРДЖИНЫ И ТО ЧТО ВЫСТАВИЛ ВЫСОТУ ЕМУ ИЗНАЧАЛЬНО?
+ВНУТРИ МАЛЕНЬКИХ БЛОКОВ ОСОБЕННО*/
+
+.main_dish_menu_icon{
+	background: url(../img/main-dish-pic.png);
+	width: 150px;
+    height: 101px;
+}
+
+.food_icon_1{
+	border-radius: 12px 0 12px 0;
+}
+
+.food_icon_2{
+	border-radius: 0 12px 0 12px;
+}
+
+.full_menu_button{
+	width: 200px;
+	height: 68px;
+	border-radius: 8px;
+}
+
+.main_dish_text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 186px;
+}
+
+.main_dish_nav{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 92px;
+}
+
+.dish_nav_item{
+	margin-right: 40px;
+}
+
+.dish_nav_item:last-child{
+	margin-right: 0px;
+}
+
+.main_dish_menu{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+
+}
+
+.main_dish_menu_header{
+	margin-bottom: 8px;
+}
+
+.main_dish_menu_column{
+	display: flex;
+	flex-direction: column;
+	margin-left: 108px;
+}
+
+.main_dish_menu_column:first-child{
+	margin-left: 0px;
+}
+
+.main_dish_menu_item{
+	display: flex;	
+	margin-bottom: 48px;
+}
+
+.main_dish_menu_text_wrapper{
+	margin-left: 14px;
+}
+
+.full_menu_button{
+	display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 220px;
+}
+
+.our_stuff_head_text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.our_stuff_descr{
+	margin-bottom: 10px;
+}
+
+.slider_our_stuff{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 280px;
+}
+
+.slider_our_stuff_item{
+	box-shadow: 0px 0px 6px 0px #000000;
+	background: white;
+	width: 31.6%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 100;
+}
+
+.wrapper_slider_our_stuff_photo{
+	position: relative;
+	width: 100%;
+	
+}
+
+.wrapper_slider_our_stuff_photo:hover .slider_our_stuff_hover{
+	display: flex;
+	
+	
+}
+
+.slider_our_stuff_hover{
+	background: linear-gradient(to right, rgba(64, 177, 229, 0.61) 0%, rgba(0, 255, 240, 0.61) 100%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider_our_stuff_zoom{
+	margin-right: 10px;
+	border-radius: 50%;
+	background: white;
+	color: #ff3a2d;
+	font-family: Simple-Line-Icons;
+	font-size: 20px;
+	    width: 34px;
+    line-height: 34px;
+    text-align: center;
+
+}
+
+.slider_our_stuff_link{
+	border-radius: 50%;
+	background: white;
+	color: #ff3a2d;
+	font-family: Simple-Line-Icons;
+	font-size: 20px;
+	    width: 34px;
+    line-height: 34px;
+    text-align: center;
+
+}
+
+.slider_our_stuff_name{
+	margin-top: 20px;
+}
+
+.slider_our_stuff_grade{
+	margin-bottom: 20px;
+}
+
+.slider_our_stuff_social_icons{
+	margin-bottom: 20px;
+}
+
+.slider_our_stuff_photo_1{
+	background: url(../img/chief-man-1.png);
+	width: 352px;
+	height: 436px;
+}
+
+.slider_our_stuff_photo_3{
+	background: url(../img/chief-man-1.png) no-repeat;
+	width: 352px;
+	height: 436px;
+	margin: auto;
+}
+
+.slider_our_stuff_photo_2{
+	background: url(../img/chief-man-1.png);
+	width: 352px;
+	height: 436px;
+}
+
+.slider_our_stuff_arrow.right{
+	background: url(../img/food-item-right.png) no-repeat center;
+	right: 160px;
+}
+
+.slider_our_stuff_arrow.left{
+	background: url(../img/food-item-left.png) no-repeat center;
+	left: 160px;
+}
+
+.slider_our_stuff_arrow{
+	    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 38%;
+}
+
+
+/*НЕ ВСТАЛИ СТРЕЛКИ ПОЧЕМУ-ТО*/
+
+.big_bubble{
+	background: url(../img/big-bubble.png) no-repeat;
+	width: 320px;
+	height: 320px;
+	position: absolute;
+	top: -145px;
+    left: 7%;
+	z-index: 1;
+}
+
+/*Не встали правильно, потому что
+изначально были с такой прозрачностью?
+Или не там з-индекс?*/
+
+.small_bubble{
+	background: url(../img/small-buble.png) no-repeat;
+	width: 167px;
+	height: 167px;
+	position: absolute;
+	top: 520px;
+    left: 76%;
+    z-index: 1;
+}
+
+.slider_our_stuff_wrapper{
+	position: relative;
+}
+
+.container_event{
+	background: url(../img/rest-layer.png) no-repeat;
+	background-size: 100% 850px;
+	background-color: #fff;
+    position: relative;
+    z-index: 100;
+}
+
+.wrapper_bcg_event{
+	background-color: rgba(0, 0, 0, 0.6);
+	background-size: 100% 850px;
+	position: relative;
+	z-index: 10;
+	height: 850px;
+}
+
+.red_line_kids{
+	display: none;
+}
+
+.container_event_video_wrapper{
+	padding-top: 445px;
+}
+
+.video_circle{
+	background: url(../img/play-button.png) no-repeat;
+	width: 96px;
+	height: 96px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.upcoming_event_block{
+	background: #fff;
+	box-shadow: 0px 0px 6px 0px #000000;
+	margin-bottom: 200px;
+	padding-bottom: 100px;
+}
+
+.event_block_text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.event_block_title{
+	margin-top: 98px;
+}
+
+
+.event_block_header{
+    margin-bottom: 20px;
+}
+
+.event_block_descr{
+	margin-bottom: 72px;
+}
+
+.event_block_footer{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.buy_ticket_button{
+	width: 200px;
+	height: 60px;
+	background-color: #ff3a2d;
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event_block_sponsors_logos{
+	display: flex;
+	justify-content: space-between;
+}
+
+.event_block_splogo_1{
+	width: 45px;
+	height: 45px;
+	background: url(../img/sponsor-1.png);
+	    margin-right: 10px;
+}
+
+.event_block_splogo_2{
+	width: 45px;
+	height: 45px;
+	background: url(../img/sponsor-2.png);
+	    margin-right: 10px;
+}
+
+.event_block_splogo_3{
+	width: 45px;
+	height: 45px;
+	background: url(../img/sponsor-3.png);
+	    margin-right: 10px;
+}
+
+.event_block_splogo_4{
+	width: 45px;
+	height: 45px;
+	background: url(../img/sponsor-4.png);
+}
+
+.event_block_sponsor_text{
+	margin-bottom: 5px;
+}
+
+/*ПОЛЕ ПОИСКА НЕ РАБОТАЕТ ПОЧЕМУ-ТО*/
+
+.container_feedback{
+	background: #ffe8e7;
+	margin-top: 450px;
+	margin-bottom: 200px;
+}
+
+
+.feedback_text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 146px;
+}
+
+
+.container_feedback_main{
+	display: flex;
+	justify-content: space-between;
+	    padding-bottom: 148px;
+}
+
+.feedback_divider{
+	display: flex;
+	align-items: center;
+}
+
+.feedback_photo{
+	background: url(../img/feedback-photo.png);
+	width: 370px;
+	height: 515px;
+}
+
+.feedback_comment_box{
+	background-color: #fff;
+	box-shadow: 0px 0px 6px 0px #000000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	    padding: 0px 84px;
+}
+
+.big_quotes{
+	margin-bottom: 34px;
+}
+
+.feedback_comment_text{
+	text-align: center;
+	    margin-bottom: 34px;
+}
+
+.feedback_comment_rating{
+	    margin-bottom: 34px;
+}
+
+
+.container_subscribe{
+	background: url(../img/news-layer.png) no-repeat;
+    background-size: 100% 595px;
+    position: relative;
+    z-index: 100;
+    height: 595px;
+}
+
+.container_subscribe_wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 595px;
+
+}
+
+.wrapper_bcg_subscribe{
+	background-color: rgba(0, 0, 0, 0.6);
+	background-size: 100% 595px;
+	position: relative;
+	z-index: 10;
+	height: 595px;
+}
+
+.subscribe_text_box{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.subscribe_header{
+	margin-bottom: 20px;
+}
+
+.subscribe_text{
+	/*margin-bottom: 210px;*/
+}
+
+
+.email_send_form input{
+	height: 84px;
+	width: 410px;
+	font-family: Poppins-Regular;
+	font-size: 18px;
+	color: #808080;
+	background: #fff;
+	    border: 0px;
+}
+
+.email_send_form button{
+	font-family: FontAwesome;
+	font-size: 36px;
+	color: #fff;
+	width: 90px;
+	background: linear-gradient(to right, #40b1e5 0%,#00fff0 100%);
+	border: 0px;
+
+}
+
+.email_send_form form{
+	display: flex;
+
+}
+
+.container_blog{
+	background: #ffe8e7;
+}
+
+.container_blog_header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container_blog_title{
+	padding-top: 180px;
+}
+
+.blog_item{
+	background: #fff;
+	text-align: center;
+	position: relative;
+
+}
+
+.blog_item_date{
+	background: #ff3a2d;
+	display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 16px;
+}
+
+/*НУЖЕН ВРАППЕР И АБСОЛЮТ ПОЗИЦИОНИРОВАНИЕ*/
+
+.wrapper_blog_item_date{
+	position: absolute;
+	left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.blog_item_footer_line{
+	background: #ff3a2d;
+	display: flex;
+    justify-content: space-between;
+}
+
+.blog_item_box{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 200px;
+
+}
+
+.blog_item_photo-1{
+	background: url(../img/photo_blog-1.png) no-repeat;
+	width: 370px;
+	height: 402px;
+}
+
+.blog_item_photo-2{
+	background: url(../img/photo_blog-2.png) no-repeat;
+	width: 370px;
+	height: 402px;
+	
+}
+
+.blog_item_photo-3{
+	background: url(../img/photo_blog-3.png) no-repeat;
+	width: 370px;
+	height: 402px;
+
+}
+
+.blog_item_footer_line{
+	padding: 14px 33px;
+	margin-bottom: 40px;
+}
+
+.blog_item_text_box{
+	display: flex;
+	flex-direction: column;
+	padding: 33px 33px;
+	text-align: left;
+}
+
+.post_item_header, .post_item_header-2{
+	margin-bottom: 20px;
+}
+
+.slider_blog_arrow_right, .slider_blog_arrow_left{
+	font-family: FontAwesome;
+	font-size: 48px;
+	color: #00c5d2;
+}
+
+.slider_blog_arrow_right{
+	position: absolute;
+	right: 0;
+}
+
+.slider_blog_arrow_left{
+	position: absolute;
+	left: 0;
+}
+
+
+
+.contact_header_box{
+	margin-top: 188px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.google_map{
+	margin-bottom: 192px;
+
+}
+
+.info_box{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 150px;
+}
+
+.sent_message_box{
+
+}
+
+.sent_message_title{
+	margin-bottom: 40px;
+}
+
+.sent_message_form_box{
+	display: flex;
+	flex-direction: column;
+	/*КАК ЗДЕСЬ СДЕЛАТЬ ПРАВИЛЬНУЮ ШИРИНУ?
+	ПОКА СДЕЛАЛ В ПИКСЕЛЯХ*/
+	width: 585px;
+}
+
+.sent_message_form_box input{
+	height: 50px;
+	margin-bottom: 40px;
+}
+
+.sent_message_form_box textarea{
+	height: 190px;
+	margin-bottom: 40px;
+	padding-left: 10px;
+}
+
+#submit_contact{
+	text-align: center;
+	width: 120px;
+	height: 50px;
+	padding: 0;
+
+}
+
+.open_hours_item{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.open_hours_item:last-child{
+	margin-bottom: 0px;
+}
+
+.open_hours_day{
+	margin-right: 14px;
+}
+
+.footer{
+	background: url(../img/footer-layer.png) no-repeat;
+	height: 450px;
+
+}
+
+.wrapper_footer{
+	background: rgba(255, 232, 231, 0.9);
+	height: 450px;
+}
+
+.footer_menu{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer_box{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.footer_inst_box{
+	display: flex;
+	margin-bottom: 40px;
+
+}
+
+.inst_box_column{
+	display: flex;
+	flex-direction: column;
+}
+
+.inst_box_item{
+	width: 80px;
+	height: 80px;
+	background: url(../img/inst-photo.png);
+	margin-right: 6px;
+}
+
+.inst_box_item:last-child{
+	margin-right: 0px;
+}
+
+.footer_inst_header{
+	margin-bottom: 20px;
+	margin-top: 78px;
+}
+
+.footer_intro{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.intro_logo{
+	background: url(../img/logo-footer.png);
+	width: 74px;
+	height: 62px;
+	margin-bottom: 8px;
+}
+
+.intro_header{
+	margin-bottom: 8px;
+}
+
+.tag_header{
+	margin-bottom: 12px;
+		margin-top: 78px;
+}
+
+.tag_item_row{
+	margin-bottom: 8px;
+}
+
+.tag_item_row:last-child{
+	margin-bottom: 0px;
+
+}
+
+.tag_item_box{
+	margin-bottom: 40px;
+}
+
+.tag_item{
+	display: inline-flex;
+	padding: 4px 6px;
+	text-align: center;
+}
+
+.search_form_footer{
+	display: flex;
+
+}
+
+.footer_search{
+	
+}
+
+.footer_search input{
+  border: none;
+  border-radius: 6px 0 0 6px;
+  height: 28px;
+  width: 228px;
+  box-sizing: border-box;
+
+}
+
+.footer_search button{
+	background: url(../img/search-icon.png) no-repeat center;
+	background-size: 12px 12px;
+	width: 30px;
+	height: 28px;
+	border: 0px;
+
+	
+}
+
+.userful_link{
+	margin-right: 20px;
+}
+
+.footer_menu_item{
+	margin-right: 20px;
+}
+
+.footer_menu_item:last-child{
+	margin-right: 0px;
+}
+
+/*-----------------------------*/
+/*FONTS FACES*/
+
+@font-face{
+    font-family: FontAwesome; 
+	src:url(../fonts/FontAwesome.otf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Simple-Line-Icons; 
+	src:url(../fonts/Simple-Line-Icons.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: LobsterTwo-Bold; 
+	src:url(../fonts/LobsterTwo-Bold.otf);
+	font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: LobsterTwo-BoldItalic; 
+	src:url(../fonts/LobsterTwo-BoldItalic.otf);
+	font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: LobsterTwo-Italic; 
+	src:url(../fonts/LobsterTwo-Italic.otf);
+	font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: LobsterTwo-Regular; 
+	src:url(../fonts/LobsterTwo-Regular.otf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: Poppins-Medium; 
+	src:url(../fonts/Poppins-Medium.ttf);
+	font-style: normal;
+}
+
+@font-face{
+    font-family: Poppins-Regular; 
+	src:url(../fonts/Poppins-Regular.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: Poppins-SemiBold; 
+	src:url(../fonts/Poppins-SemiBold.ttf);
+	font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Sacramento-Regular; 
+	src:url(../fonts/Sacramento-Regular.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: SourceSansPro-Bold; 
+	src:url(../fonts/SourceSansPro-Bold.otf);
+	font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: SourceSansPro-Regular; 
+	src:url(../fonts/SourceSansPro-Regular.otf);
+	font-weight: normal;
+    font-style: normal;
+}
