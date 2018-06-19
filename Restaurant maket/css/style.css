@@ -709,12 +709,14 @@ input{
 }
 
 .slider_menu_wrapper{
-	width: 100%;
+	width: 1170px;
 	overflow: hidden;
 	padding: 0 30px;
 	box-sizing: border-box;
 	position: relative;
 }
+
+/*width: 100%;*/
 
 .slider_menu_arrow{
 	width: 56px;
