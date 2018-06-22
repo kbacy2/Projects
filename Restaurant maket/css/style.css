@@ -878,6 +878,7 @@ input{
 
 .dish_nav_item{
 	margin-right: 40px;
+	cursor: pointer;
 }
 
 .dish_nav_item:last-child{
@@ -888,8 +889,36 @@ input{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
-
+	animation-name: moving_menu;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-direction: alternate-reverse;
 }
+
+@keyframes moving_menu {
+	from{visability: hidden}
+	25%{visability: hidden}
+	50%{opacity: .100}
+	to{opacity: 1}
+}
+
+.breakfast_main__menu, .lunch_main__menu, .dinner_main__menu,
+.desert_main__menu, .kids_main__menu{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main_dish_menu_header{
 	margin-bottom: 8px;
@@ -1030,7 +1059,7 @@ input{
 .modal-chiefs{
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 1000;
 	padding-top: 100px;
 	left: 0;
 	top: 0;
@@ -1059,7 +1088,7 @@ input{
 	to{transform:scale(1)}
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1170px){
 	.modal_content__chief-1, .modal_content__chief-2, .modal_content__chief-3{width: 100%;}
 }
 
