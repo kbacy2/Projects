@@ -5,40 +5,23 @@ var arrowLeft = document.querySelector('#slider_menu_arrow_left');
 var arrowRight = document.querySelector('#slider_menu_arrow_right');
 var position = 0;
 var cubic = document.querySelector('.cubic');
+var VIEWPORT_WIDTH = slider.offsetWidth + 20;
 
 arrowRight.addEventListener('click', function () {
-    position = position -1170;
-    if (position < -2340){
+    position = position - VIEWPORT_WIDTH;
+    if (position < -VIEWPORT_WIDTH*2){
         position = 0;
     }
-
-    sliderItem.forEach(function (slide) {
-        slide.classList.add('cubic');
-        setTimeout(function () {
-            slide.classList.remove('cubic');
-
-        },100);
-
-    });
-
     slider.style.marginLeft = position + 'px';
 });
 
 arrowLeft.addEventListener('click', function () {
-    position = position + 1170;
-    if (position < -1170) {
+    position = position + VIEWPORT_WIDTH;
+    if (position < -VIEWPORT_WIDTH) {
         position = 0;
     } else if(position > 0){
-        position = -2340;
+        position = -VIEWPORT_WIDTH*2;
     }
-
-    sliderItem.forEach(function (slide) {
-        slide.classList.toggle('cubic');
-        setTimeout(function () {
-            slide.classList.remove('cubic');
-
-        },100);
-    });
 
     slider.style.marginLeft = position + 'px';
 });
@@ -61,11 +44,12 @@ closeModalChiefs.forEach(function (close) {
         modalChiefThree.style.display = 'none';
         modalChiefTwo.style.display = 'none';
         modalChiefOne.style.display = 'none';
-
+        document.body.removeEventListener('wheel', preventScroll);
     });
 });
 
 zoomClickOne.addEventListener('click', function () {
+    document.body.addEventListener('wheel', preventScroll);
     modalChiefOne.style.display = 'block';
     modalChiefImg.src;
     //captionText.innerHTML = this.alt;
@@ -73,6 +57,7 @@ zoomClickOne.addEventListener('click', function () {
 });
 
 zoomClickTwo.addEventListener('click', function () {
+    document.body.addEventListener('wheel', preventScroll);
     modalChiefTwo.style.display = 'block';
     modalChiefImg.src;
     //captionText.innerHTML = this.alt;
@@ -80,11 +65,17 @@ zoomClickTwo.addEventListener('click', function () {
 });
 
 zoomClickThree.addEventListener('click', function () {
+    document.body.addEventListener('wheel', preventScroll);
     modalChiefThree.style.display = 'block';
     modalChiefImg.src;
     //captionText.innerHTML = this.alt;
 
 });
+
+function preventScroll(e) {
+    e.preventDefault();
+    e.stopPropagation();
+}
 
 //SLIDER-LIST FOOD MENU
 
@@ -101,7 +92,7 @@ var openBreakfast = document.querySelector('.dish_item_breakfast');
 var openLunch = document.querySelector('.dish_item_lunch');
 var openDinner = document.querySelector('.dish_item_dinner');
 var openDesert = document.querySelector('.dish_item_desert');
-var openKids = document.querySelector('.dish_item_kids');
+var openKids = document.querySelector('.dish_item_kids');``
 
 
 //Как сделать по уму при наведении мыши

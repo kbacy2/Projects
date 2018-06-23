@@ -44,12 +44,12 @@ body{
     left: 60%;
 }
     /*ПРАВИЛЬНО СДЕЛАЛ?*/
-}
 
 .main{
 	max-width: 100%;
 	min-height: 100%;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .container_help{
@@ -711,11 +711,15 @@ input{
 }
 
 .slider_menu_wrapper{
-	width: 1170px;
-	overflow: hidden;
+	width: 1200px;
 	padding: 0 30px;
 	box-sizing: border-box;
 	position: relative;
+	margin: auto;
+}
+
+.slider_menu_inner {
+	overflow: hidden;
 }
 
 /*width: 100%;*/
