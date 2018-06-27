@@ -56,7 +56,6 @@
     }
 })();
 
-
 //MODAL CHIEFS WINDOW
 
 var modalChiefOne = document.querySelector('.modal_chief__1');
@@ -179,3 +178,4 @@ openKids.addEventListener('click', function () {
     desertMainMenu.style.display = 'none';
     kidsMainMenu.style.display = 'flex';
 });
+

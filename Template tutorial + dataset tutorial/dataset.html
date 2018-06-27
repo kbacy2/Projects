@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="cards">
+    <div class="card" data-title="POVAR 1">
+        <img src="http://foodnchef.com/wp-content/uploads/2015/05/IMG_0391_HD_two-1.jpg" class="card__photo">
+        <h2 class="card__title">Ha4 POVAR</h2>
+    </div>
+    <div class="card" data-title="POVAR 2">
+        <img src="http://foodnchef.com/wp-content/uploads/2015/05/IMG_0391_HD_two-1.jpg" class="card__photo">
+        <h2 class="card__title">Ha4 POVAR</h2>
+    </div>
+</div>
+<div class="modal">
+    <h1></h1>
+</div>
+
+
+body {
+margin: 0;
+padding: 0;
+}
+
+.card {
+float: left;
+margin-right: 25px;;
+}
+.card__photo {
+width: 200px;;
+}
+
+document.querySelectorAll('.card').forEach(function(cardElement) {
+cardElement.addEventListener('click', function(event) {
+showModal(cardElement.dataset);
+});
+});
+
+function showModal(data) {
+// add class
+// replace data
+document.querySelector('.modal h1').textContent = data.title;
+}
+
+
+
+
+
+</body>
+</html>

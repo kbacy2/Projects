@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="cards">
+
+</div>
+
+
+
+var cardsInner = document.querySelector('.cards');
+var cards = [
+{ ebalo: 'http://foodnchef.com/wp-content/uploads/2015/05/IMG_0391_HD_two-1.jpg', title: 'Ha4 POVAR' },
+{ ebalo: 'http://the-blogger.ru/wp-content/uploads/2017/04/Povar-Putina-1000x500.jpg', title: 'Баринов' },
+{ ebalo: 'https://cdn.openrussia.org/media/content/main/2017-11-10_17-08-49__ac6e0b1e-c620-11e7-aa4a-06f7ed071225.jpg', title: 'Повар Путина' },
+];
+
+var template = _.template('<div class="card"><img src="<%- ebalo %>" class="card__photo"><h2 class="card__title"><%- title %></h2></div>');
+
+var modalTemplate = = _.template('<div class="card"><img src="<%- ebalo %>" class="card__photo"><h2 class="card__title"><%- title %></h2></div>');
+
+var fragment = document.createDocumentFragment()
+
+cards.forEach(function (cardData) {
+var cardInner = document.createElement('div');
+cardInner.innerHTML = template(cardData);
+fragment.appendChild(cardInner);
+cardInner.addEventListener('click', function() {
+modalTemplate(cardData);
+});
+});
+
+cardsInner.appendChild(fragment);
+
+body {
+margin: 0;
+padding: 0;
+}
+
+.card {
+float: left;
+margin-right: 25px;;
+}
+.card__photo {
+width: 200px;;
+}
+
+
+
+
+
+
+</body>
+</html>
