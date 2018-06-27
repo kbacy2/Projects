@@ -701,6 +701,12 @@ input{
 	margin-right: 20px;
 }
 
+.slider_menu_item_img {
+	display: inline-block;
+	width: 270px;
+	font-size: 0;
+}
+
 .slider_menu_item_cost{
 
 }

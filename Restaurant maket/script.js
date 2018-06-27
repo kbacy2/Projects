@@ -1,30 +1,60 @@
 // CONTENT SLIDER
-var slider = document.querySelector('.slider_menu');
-var sliderItem = document.querySelectorAll('.slider_menu_item');
-var arrowLeft = document.querySelector('#slider_menu_arrow_left');
-var arrowRight = document.querySelector('#slider_menu_arrow_right');
-var position = 0;
-var cubic = document.querySelector('.cubic');
-var VIEWPORT_WIDTH = slider.offsetWidth + 20;
+// var slider = document.querySelector('.slider_menu');
+// var sliderItems = document.querySelectorAll('.slider_menu_item');
+// var arrowLeft = document.querySelector('#slider_menu_arrow_left');
+// var arrowRight = document.querySelector('#slider_menu_arrow_right');
+// var cubic = document.querySelector('.cubic');
+// var VIEWPORT_WIDTH = slider.offsetWidth + 20;
 
-arrowRight.addEventListener('click', function () {
-    position = position - VIEWPORT_WIDTH;
-    if (position < -VIEWPORT_WIDTH*2){
-        position = 0;
+// arrowRight.addEventListener('click', function () {
+//     position = position - VIEWPORT_WIDTH;
+//     if (position < -VIEWPORT_WIDTH*2){
+//         position = 0;
+//     }
+//     slider.style.marginLeft = position + 'px';
+// });
+//
+// arrowLeft.addEventListener('click', function () {
+//     position = position + VIEWPORT_WIDTH;
+//     if (position < -VIEWPORT_WIDTH) {
+//         position = 0;
+//     } else if(position > 0){
+//         position = -VIEWPORT_WIDTH*2;
+//     }
+//
+//     slider.style.marginLeft = position + 'px';
+// });
+
+(function(){
+    var slider = document.querySelector('.slider_menu');
+    var sliderItems = document.querySelectorAll('.slider_menu_item');
+    var arrowLeft = document.querySelector('#slider_menu_arrow_left');
+    var arrowRight = document.querySelector('#slider_menu_arrow_right');
+    var offset = 0;
+    var slideWidth = sliderItems[0].offsetWidth + 20;
+    var overallSlidesWidth = slideWidth * sliderItems.length;
+    var maxSlidesToChange = Math.round(slider.offsetWidth / slideWidth);
+
+    arrowRight.addEventListener('click', nextSlide);
+
+    arrowLeft.addEventListener('click', prevSlide);
+
+    function nextSlide() {
+        var rest = overallSlidesWidth - (offset + maxSlidesToChange * slideWidth) - maxSlidesToChange * slideWidth;
+        if (rest === -(maxSlidesToChange * slideWidth)) offset = 0;
+        else if (rest >= 0) offset += maxSlidesToChange * slideWidth;
+        else offset += Math.round((maxSlidesToChange * slideWidth + rest) / slideWidth) * slideWidth;
+        slider.style.marginLeft = -offset + 'px';
     }
-    slider.style.marginLeft = position + 'px';
-});
 
-arrowLeft.addEventListener('click', function () {
-    position = position + VIEWPORT_WIDTH;
-    if (position < -VIEWPORT_WIDTH) {
-        position = 0;
-    } else if(position > 0){
-        position = -VIEWPORT_WIDTH*2;
+    function prevSlide() {
+        var rest = overallSlidesWidth - (offset - maxSlidesToChange * slideWidth) - maxSlidesToChange * slideWidth;
+        if (rest === overallSlidesWidth) offset = overallSlidesWidth - maxSlidesToChange * slideWidth;
+        else if (overallSlidesWidth - maxSlidesToChange * slideWidth - rest + slideWidth * maxSlidesToChange < maxSlidesToChange * slideWidth) offset -= overallSlidesWidth - maxSlidesToChange * slideWidth - rest + slideWidth * maxSlidesToChange;
+        else offset -= maxSlidesToChange * slideWidth;
+        slider.style.marginLeft = -offset + 'px';
     }
-
-    slider.style.marginLeft = position + 'px';
-});
+})();
 
 
 //MODAL CHIEFS WINDOW
