@@ -55,7 +55,7 @@
         slider.style.marginLeft = -offset + 'px';
     }
 })();
-
+// -------------------------------------------------
 //MODAL CHIEFS WINDOW
 
 var modalChiefOne = document.querySelector('.modal_chief__1');
@@ -105,77 +105,98 @@ function preventScroll(e) {
     e.preventDefault();
     e.stopPropagation();
 }
+// -----------------------------------------------
+
 
 //SLIDER-LIST FOOD MENU
 
-var allMainMenu = document.querySelector('.all_main__menu');
-var breakfastMainMenu = document.querySelector('.breakfast_main__menu');
-var lunchMainMenu = document.querySelector('.lunch_main__menu');
-var dinnerMainMenu = document.querySelector('.dinner_main__menu');
-var desertMainMenu = document.querySelector('.desert_main__menu');
-var kidsMainMenu = document.querySelector('.kids_main__menu');
-var mainMenu = document.querySelector('.main_dish_menu');
+var dishNavItems = document.querySelectorAll('.dish_nav_item');
+dishNavItems.forEach(function (dishNavElem) {
+    dishNavElem.addEventListener('click', function (event) {
+        var mainMenuContents = document.querySelectorAll('.main_dish_menu');
+        mainMenuContents.forEach(function (mainMenuContent) {
+            mainMenuContent.style.display = 'none';
+        });
+        var dataTargetDishMenu = event.target.dataset.target;
+        var showTargetDishMenu = document.querySelector('.' + dataTargetDishMenu);
+        showTargetDishMenu.style.display = 'flex';
 
-var openAll = document.querySelector('.dish_item_all');
-var openBreakfast = document.querySelector('.dish_item_breakfast');
-var openLunch = document.querySelector('.dish_item_lunch');
-var openDinner = document.querySelector('.dish_item_dinner');
-var openDesert = document.querySelector('.dish_item_desert');
-var openKids = document.querySelector('.dish_item_kids');``
+    });
+});
+
+
+
+// OLD WAY
+
+// var allMainMenu = document.querySelector('.all_main__menu');
+// var breakfastMainMenu = document.querySelector('.breakfast_main__menu');
+// var lunchMainMenu = document.querySelector('.lunch_main__menu');
+// var dinnerMainMenu = document.querySelector('.dinner_main__menu');
+// var desertMainMenu = document.querySelector('.desert_main__menu');
+// var kidsMainMenu = document.querySelector('.kids_main__menu');
+// var mainMenu = document.querySelector('.main_dish_menu');
+
+// var openAll = document.querySelector('.dish_item_all');
+// var openBreakfast = document.querySelector('.dish_item_breakfast');
+// var openLunch = document.querySelector('.dish_item_lunch');
+// var openDinner = document.querySelector('.dish_item_dinner');
+// var openDesert = document.querySelector('.dish_item_desert');
+// var openKids = document.querySelector('.dish_item_kids');
 
 
 //Как сделать по уму при наведении мыши
-openAll.addEventListener('click', function () {
-    allMainMenu.style.display = 'flex';
-    breakfastMainMenu.style.display = 'none';
-    lunchMainMenu.style.display = 'none';
-    dinnerMainMenu.style.display = 'none';
-    desertMainMenu.style.display = 'none';
-    kidsMainMenu.style.display = 'none';
-});
+// openAll.addEventListener('click', function () {
+//     allMainMenu.style.display = 'flex';
+//     breakfastMainMenu.style.display = 'none';
+//     lunchMainMenu.style.display = 'none';
+//     dinnerMainMenu.style.display = 'none';
+//     desertMainMenu.style.display = 'none';
+//     kidsMainMenu.style.display = 'none';
+// });
+//
+// openBreakfast.addEventListener('click', function () {
+//     allMainMenu.style.display = 'none';
+//     breakfastMainMenu.style.display = 'flex';
+//     lunchMainMenu.style.display = 'none';
+//     dinnerMainMenu.style.display = 'none';
+//     desertMainMenu.style.display = 'none';
+//     kidsMainMenu.style.display = 'none';
+// });
+//
+// openLunch.addEventListener('click', function () {
+//     allMainMenu.style.display = 'none';
+//     breakfastMainMenu.style.display = 'none';
+//     lunchMainMenu.style.display = 'flex';
+//     dinnerMainMenu.style.display = 'none';
+//     desertMainMenu.style.display = 'none';
+//     kidsMainMenu.style.display = 'none';
+// });
+//
+// openDinner.addEventListener('click', function () {
+//     allMainMenu.style.display = 'none';
+//     breakfastMainMenu.style.display = 'none';
+//     lunchMainMenu.style.display = 'none';
+//     dinnerMainMenu.style.display = 'flex';
+//     desertMainMenu.style.display = 'none';
+//     kidsMainMenu.style.display = 'none';
+// });
+//
+// openDesert.addEventListener('click', function () {
+//     allMainMenu.style.display = 'none';
+//     breakfastMainMenu.style.display = 'none';
+//     lunchMainMenu.style.display = 'none';
+//     dinnerMainMenu.style.display = 'none';
+//     desertMainMenu.style.display = 'flex';
+//     kidsMainMenu.style.display = 'none';
+// });
+//
+// openKids.addEventListener('click', function () {
+//     allMainMenu.style.display = 'none';
+//     breakfastMainMenu.style.display = 'none';
+//     lunchMainMenu.style.display = 'none';
+//     dinnerMainMenu.style.display = 'none';
+//     desertMainMenu.style.display = 'none';
+//     kidsMainMenu.style.display = 'flex';
+// });
 
-openBreakfast.addEventListener('click', function () {
-    allMainMenu.style.display = 'none';
-    breakfastMainMenu.style.display = 'flex';
-    lunchMainMenu.style.display = 'none';
-    dinnerMainMenu.style.display = 'none';
-    desertMainMenu.style.display = 'none';
-    kidsMainMenu.style.display = 'none';
-});
-
-openLunch.addEventListener('click', function () {
-    allMainMenu.style.display = 'none';
-    breakfastMainMenu.style.display = 'none';
-    lunchMainMenu.style.display = 'flex';
-    dinnerMainMenu.style.display = 'none';
-    desertMainMenu.style.display = 'none';
-    kidsMainMenu.style.display = 'none';
-});
-
-openDinner.addEventListener('click', function () {
-    allMainMenu.style.display = 'none';
-    breakfastMainMenu.style.display = 'none';
-    lunchMainMenu.style.display = 'none';
-    dinnerMainMenu.style.display = 'flex';
-    desertMainMenu.style.display = 'none';
-    kidsMainMenu.style.display = 'none';
-});
-
-openDesert.addEventListener('click', function () {
-    allMainMenu.style.display = 'none';
-    breakfastMainMenu.style.display = 'none';
-    lunchMainMenu.style.display = 'none';
-    dinnerMainMenu.style.display = 'none';
-    desertMainMenu.style.display = 'flex';
-    kidsMainMenu.style.display = 'none';
-});
-
-openKids.addEventListener('click', function () {
-    allMainMenu.style.display = 'none';
-    breakfastMainMenu.style.display = 'none';
-    lunchMainMenu.style.display = 'none';
-    dinnerMainMenu.style.display = 'none';
-    desertMainMenu.style.display = 'none';
-    kidsMainMenu.style.display = 'flex';
-});
-
+// -----------------------------------------------
